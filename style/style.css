@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #16BFFD, #CB3066);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 30vw;
+    padding: 20px 0;
+    background: #fff;
+}
+
+.container h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.loginInput {
+    position: relative;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.inputLabel{
+    position: absolute;
+    left: 0;
+    transition: .1s ease;
+    color: #a3a3a3;
+    margin-left: 6px;
+}
+
+.loginInput input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #a3a3a3;
+    padding: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    transition: .2s linear;
+}
+
+.loginInput input:valid {
+    border-color: #16BFFD;
+}
+
+form a {
+    text-decoration: none;
+    color: #CB3066;
+    transform-origin: left;
+    transition: .2s linear;
+}
+
+form a:hover {
+    color: #16BFFD;
+}
+
+#submitInput {
+    margin: 30px 0 30px 0;
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form span {
+    width: 100%;
+    text-align: center;
+}
+
+.boxMsg {
+    border-radius: 10px;
+    width: 30vw;
+    height: 15vh;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #f02c71;
+}
+
+.boxMsg button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255, .5);
+    color: #fff;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="boxMsg">
+        <span></span>
+        <button>X</button>
+    </div>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="#" method="GET">
+            <div class="loginInput">
+                <input type="email" name="loginEmail" id="loginEmail" required>
+                <label for="loginEmail" class="inputLabel">Email</label>
+            </div>
+            <div class="loginInput">
+                <input type="password" name="loginPassword" id="loginPassword" minlength="8" required>
+                <label for="loginPassword" class="inputLabel">Password</label>
+            </div>
+            <a href="#">Forgot Password?</a>
+            <button id="submitInput">Login</button>
+            <span>Not a member yet? <a href="#">Register now</a></span>
+        </form>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+</html>
